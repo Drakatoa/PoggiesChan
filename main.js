@@ -1,3 +1,5 @@
+import os
+
 const Discord = require('discord.js');
 
 const client = new Discord.Client({ partials: ["MESSAGE", "CHANNEL", "REACTION"] });
@@ -39,4 +41,4 @@ client.events = new Discord.Collection();
 // })
 
 
-client.login('VAL_TOKEN');
+client.login(os.environ.get('BOT_TOKEN'));
