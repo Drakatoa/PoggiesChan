@@ -5,7 +5,7 @@ const queue = new Map();
 
 module.exports = {
     name: 'play',
-    aliases: ['skip', 'stop'], 
+    aliases: ['p','skip', 'stop'], 
     cooldown: 0,
     description: 'MUSIC POGGIES',
     async execute(message, args, cmd, client, Discord){
