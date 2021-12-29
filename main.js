@@ -44,4 +44,4 @@ require('os').config();
 // })
 
 
-client.login(process.env.BOT_TOKEN);
+client.login('OTA2NjI0OTA4ODcwNzA5MjQ4.YYbWPg.sftXt2HfJ5iG0K0fLPNpupJuWF0');
