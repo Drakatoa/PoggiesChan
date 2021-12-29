@@ -13,6 +13,9 @@ client.events = new Discord.Collection();
     require(`./handlers/${handler}`)(client, Discord);
 })
 
+require('os').config();
+
+
 // const commandFiles = fs.readdirSync('./commands/').filter(file => file.endsWith('.js'));
 // for (const file of commandFiles) {
 //     const command = require(`./commands/${file}`);
@@ -41,4 +44,4 @@ client.events = new Discord.Collection();
 // })
 
 
-client.login(process.env.DISCORD_TOKEN);
+client.login(os.environ["ACCESS_TOKEN"]);
