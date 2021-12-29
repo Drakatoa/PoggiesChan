@@ -44,4 +44,4 @@ require('os').config();
 // })
 
 
-client.login(os.environ["ACCESS_TOKEN"]);
+client.login(process.env.ACCESS_TOKEN);
